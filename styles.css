@@ -1,0 +1,246 @@
+body {
+    height: 100vh;
+    font-size: 1.2vw;
+    color: black;
+    margin: 0 auto;
+    background-color: lightgray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategrey;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: auto;
+}
+
+a {
+    padding-bottom: 8%;
+    width: 60%;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+a:hover {
+    border-bottom: 2px solid white;
+}
+
+li {
+    margin: 0 10px;
+}
+
+.txt-1, a { 
+    text-decoration: none;
+    color: white;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%; 
+    margin: 4% auto 0% auto;
+    align-items: center;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    padding: 10px 0px 5px 0px;
+}
+
+.big-image {
+    order: 1;
+    width: 55%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.intro {
+    width: 35%;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 3% 0%;
+}
+
+.info {
+    width:60%;
+    padding: 0px 20px;
+}
+
+.testimonial-container {
+    text-align: end;
+    width: 20%;
+    padding: 0px 20px 10px 16px;
+    border-left: 4px dotted grey; 
+}
+
+.testimonial-container h4, .testimonial-container p {
+    text-align: start;
+}
+
+.reasons-container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 2% 0;
+    height: auto;
+    color: white;
+    background-color: grey;
+}
+
+h4 {
+    margin: 0;
+}
+
+#single-h4 {
+    background-color: grey;
+    text-align: center; 
+    padding: 1% 0%;
+}
+
+.small-box-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.small-box {
+    width: 20%;
+    color: black;
+    background-color: lightgrey;
+    margin: 0.5%;
+    padding: 1%;
+}
+
+.small-box img {
+    object-fit: cover;
+    width: 100%;
+	height: 40%;
+}
+
+.small-box h4 {
+    margin-top: 8px;
+}
+
+.small-box button {
+    font-size: 1vw;
+    border: 2px solid black;
+    background-color: lightgrey;
+    padding: 2% 3%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* styles for screens with width less than or equal to 767px (for mobile phones) */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 2vw;
+    }
+
+    .nav-container {
+        padding: 2.5% 0% 1% 0%;
+        display: block;
+    }
+
+    .nav-container h1 {
+        font-size: 3vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    nav ul {
+        min-width: 60%;
+        padding: 2% 10%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .intro-container {
+        width: 80%;
+        display: block;
+    }
+    
+    .big-image {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .intro {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .info-container {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+    }
+
+    .info h2 {
+        font-size: 2.1vw;
+    }
+    
+    .info {
+        display: block;
+        width: inherit;
+        margin: 0px auto 8px auto;
+    }
+    
+    .testimonial-container {
+        display: block;
+        width: inherit;
+        margin: 0px auto 8px auto;
+        text-align: end;
+        padding: 10px 20px 10px 16px;
+        border-left: 4px dotted grey; 
+        border-right: 4px dotted grey;
+    }
+
+    #single-h4 {
+        width: 80%;
+        margin: 10px auto 0px auto;
+    }
+
+    .reasons-container {
+        width: 80%;
+    }
+
+    .small-box-container {
+        display: block;
+    }
+    
+    .small-box {
+        width: 80%;
+        margin: 0 auto 5px auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    nav ul {
+        min-width: 40%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .txt-1 {
+        font-size: 1vw;
+    }
+}
